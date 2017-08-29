@@ -3,11 +3,24 @@
 - 아이폰 버전 지원 : iOS8 이상
 - SDK 연동 및 샘플 어플리케이션 실행을 위해서는 `appKey`(버즈애드 퍼블리셔 어드민에서 확인 가능) 필요
 
+## 변경 사항
+### 0.001
+- 첫 버전
+### 0.003
+- 연동 가이드에 "Run Script Phase" 부분 추가
+- showOfferWallWithTitle에 statusBarHidden 옵션 추가
+
 ## iOS SDK 연동가이드
 ### 설정
 - [SDK 다운로드](https://github.com/Buzzvil/buzzad-sdk-publisher-ios/archive/master.zip) 후 압축 해제
 - 압축 해제한 폴더 내의 BuzzvilSDK.framework를 개발중인 iOS 어플리케이션에 포함하고 Embedded Binaries에 추가
 ![스크린샷](screenshots/add_framework.png)
+- 앱 타겟의 "Build Phases" 에 "Run Script Phase" 를 추가하고 아래 코드를 붙여넣는다. 추가한 "Run Script Phase"가 "Embed Frameworks" 아래에 위치하도록 주의한다.
+```
+bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/BuzzvilSDK.framework/strip-framework.sh"
+```
+![스크린샷](screenshots/add_script_1.png)
+![스크린샷](screenshots/add_script_2.png)
 
 ### 초기화
 ```objective-c
@@ -27,9 +40,11 @@
 @interface BuzzOfferwall : NSObject
 
 + (BOOL)showOfferWallWithTitle:(NSString *)title;
++ (BOOL)showOfferWallWithTitle:(NSString *)title statusBarHidden:(BOOL)statusBarHidden;
 
 @end
 ```
+- 애플리케이션의 Info.plist에 "View controller-based status bar appearance" 가 YES로 설정되어 있는경우 statusBar를 숨기고 싶다면 statusBarHidden의 인자로 NO를 전달해줘야 한다.
 
 ### 타게팅 정보 추가(선택사항)
 성별, 나이별 타게팅 정보를 가진 광고를 유저에게 보여주려 할 때 다음의 메소드를 통해 유저의 정보를 입력할 수 있다.
