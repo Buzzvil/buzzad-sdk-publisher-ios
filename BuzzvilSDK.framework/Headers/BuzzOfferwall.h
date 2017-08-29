@@ -11,5 +11,9 @@
 @interface BuzzOfferwall : NSObject
 
 + (BOOL)showOfferWallWithTitle:(NSString *)title;
++ (BOOL)showOfferWallWithTitle:(NSString *)title statusBarHidden:(BOOL)statusBarHidden;
+
++ (BOOL)showInquiryPage;
++ (BOOL)showInquiryPageWithStatusBarHidden:(BOOL)statusBarHidden;
 
 @end
