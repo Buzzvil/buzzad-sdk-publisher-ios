@@ -4,9 +4,12 @@
 - SDK 연동 및 샘플 어플리케이션 실행을 위해서는 `appKey`(버즈애드 퍼블리셔 어드민에서 확인 가능) 필요
 
 ## 변경 사항
-### 0.001
+### v0.001 (2017-07-14)
 - 첫 버전
-### 0.003
+### v0.002 (2017-07-17)
+- Webview bounce off
+- 닫기 버튼 교체
+### v0.003 (2017-08-30)
 - 연동 가이드에 "Run Script Phase" 부분 추가
 - showOfferWallWithTitle에 statusBarHidden 옵션 추가
 
@@ -19,8 +22,7 @@
 ```
 bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/BuzzvilSDK.framework/strip-framework.sh"
 ```
-![스크린샷](screenshots/add_script_1.png)
-![스크린샷](screenshots/add_script_2.png)
+![스크린샷](screenshots/add_script.png)
 
 ### 초기화
 ```objective-c
