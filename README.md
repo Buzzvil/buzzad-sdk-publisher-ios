@@ -12,6 +12,8 @@
 ### v0.003 (2017-08-30)
 - 연동 가이드에 "Run Script Phase" 부분 추가
 - showOfferWallWithTitle에 statusBarHidden 옵션 추가
+### v0.004 (2017-09-08)
+- 포스트백에 user_id 정보 가지않는 문제 수정
 
 ## iOS SDK 연동가이드
 ### 설정
