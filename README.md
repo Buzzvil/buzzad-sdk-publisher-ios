@@ -14,6 +14,8 @@
 - showOfferWallWithTitle에 statusBarHidden 옵션 추가
 ### v0.004 (2017-09-08)
 - 포스트백에 user_id 정보 가지않는 문제 수정
+### v0.005 (2017-09-12)
+- 오퍼월 닫기 버튼 검정색으로 변경 및 위치 2point 아래로 내림
 
 ## iOS SDK 연동가이드
 ### 설정
