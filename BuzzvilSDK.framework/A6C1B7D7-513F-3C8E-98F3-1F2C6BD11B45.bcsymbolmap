@@ -41,16 +41,22 @@ _OBJC_IVAR_$_BuzzvilCore._birthYear
 _OBJC_IVAR_$_BuzzvilCore._userId
 /Users/jeseo/Documents/buzzvil-sdk-ios/BuzzvilSDK/BuzzvilCore.m
 /Users/jeseo/Documents/buzzvil-sdk-ios/BuzzvilSDK/BuzzvilCore.h
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __25+[BuzzvilCore sharedCore]_block_invoke
 _dispatch_once
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/usr/include/dispatch/once.h
 -[BuzzOfferwallMainViewController closeButtonTouchUpInside:]
 -[BuzzOfferwallMainViewController initWithTitle:statusBarHidden:pageUrl:]
+_isEmpty
 -[BuzzOfferwallMainViewController viewDidLoad]
+_CGPointMake
 -[BuzzOfferwallMainViewController viewWillAppear:]
 -[BuzzOfferwallMainViewController didReceiveMemoryWarning]
 -[BuzzOfferwallMainViewController prefersStatusBarHidden]
 -[BuzzOfferwallMainViewController close]
+-[BuzzOfferwallMainViewController showCloseButton]
+-[BuzzOfferwallMainViewController hideCloseButton]
 -[BuzzOfferwallMainViewController showLoading]
 -[BuzzOfferwallMainViewController hideLoading]
 -[BuzzOfferwallMainViewController showToas:t:]
@@ -96,6 +102,8 @@ l_OBJC_PROTOCOL_$_BuzzAdJSExport
 l_OBJC_LABEL_PROTOCOL_$_BuzzAdJSExport
 /Users/jeseo/Documents/buzzvil-sdk-ios/BuzzvilSDK/BuzzOfferwallMainViewController.m
 /Users/jeseo/Documents/buzzvil-sdk-ios/BuzzvilSDK/BuzzOfferwallMainViewController.h
+CGPointMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 isEmpty
 /Users/jeseo/Documents/buzzvil-sdk-ios/BuzzvilSDK/BuzzvilGlobalHeader.h
 +[BuzzvilDeviceService sharedService]
@@ -112,7 +120,7 @@ _sharedService._BuzzvilDeviceService
 _sharedService.oncePredicate
 /Users/jeseo/Documents/buzzvil-sdk-ios/BuzzvilSDK/BuzzvilDeviceService.m
 __37+[BuzzvilDeviceService sharedService]_block_invoke
-/Users/jeseo/Documents/buzzvil-sdk-ios/build/BuzzvilSDK.build/Release-iphoneos/BuzzvilSDK.build/DerivedSources/BuzzvilSDK_vers.c
+/Users/jeseo/Documents/buzzvil-sdk-ios/build/BuzzvilSDK.build/Debug-iphoneos/BuzzvilSDK.build/DerivedSources/BuzzvilSDK_vers.c
 __ZL15__ARCLite__loadv
 __ZL30add_image_hook_autoreleasepoolPK11mach_headerl
 __ZL34__arclite_objc_autoreleasePoolPushv
